@@ -31,9 +31,22 @@ The following variables have been considered as features for the model:<br>
 **EIN** and **NAME** were flagged as neither a target nor a feature and were essentially dropped from the input data. Both variables were identification columns for the dataset and marked as ineffectual in the model's prediction capability. 
 
 ### Deliverable 2: Compiling, Training, and Evaluating the Model
+*How many neurons, layers, and activation functions did you select for your neural network model, and why?*<br>
+
+< show the original file - dev 2>
+
+*Were you able to achieve the target model performance?*<br>
+<no, show the accuracy>
+
 
 ### Deliverable 3: Optimization
+*What steps did you take to try and increase model performance?*
+
+<show all 3 steps>
 
 ### Challenges
 
+<file_size><unable to obtain optimization>
+
 ## Summary
+*Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.*
