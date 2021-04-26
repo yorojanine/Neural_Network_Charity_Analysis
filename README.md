@@ -33,7 +33,15 @@ The following variables have been considered as features for the model:<br>
 ### Deliverable 2: Compiling, Training, and Evaluating the Model
 *How many neurons, layers, and activation functions did you select for your neural network model, and why?*<br>
 
-< show the original file - dev 2>
+In using the nine features listed above, the nueral network model has been set for two hidden layers.<br>
+At the first hidden layer, 80 neurons were the selected input using the relu activation function. **--why?**
+At the second hidden layer, 30 neurons were the selected input also using the relu activation function. **--why?**
+>> handles non-linear data and simplifies output better than other activation functions???
+
+Finally at the output layer, 1 neuron was applied using the sigmoid activation function. --why?
+>> produces a probability output.
+>> 
+insert picture of code
 
 *Were you able to achieve the target model performance?*<br>
 <no, show the accuracy>
