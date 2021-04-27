@@ -41,7 +41,7 @@ Finally at the output layer, 1 neuron was applied using the sigmoid activation f
 ![](resources/dev2_inputs.PNG)
 
 *Were you able to achieve the target model performance?*<br>
-The model's target performance was to achieve an accuracy of higher than 75%. After running the initial input, the model was shy of roughly 2% and only achieved **72.61%** accuracy.
+The model's target performance was to achieve an accuracy of higher than 75%. After running the initial input, the model was shy of roughly 2.5% and only achieved **72.54%** accuracy.
 
 ![](resources/originalAccuracy.PNG)
 
@@ -62,7 +62,9 @@ Furthermore, as we can see from the results, all attempts to optimize the model 
 
 ### Challenges
 
-<file_size><unable to obtain optimization>
+Working with the dataset, I ran into a few challenges. (1) Unable to achieve optimization. In addition, I noticed a slight difference when I copied the `AlphaetSoupCharity.ipynb` and built upon the code with `AlphaetSoupCharity_Optimization.ipynb`. With the optimization code, I added all my attempts for enhancement. However, when I ran the whole notebook through as one swoop, I noticed that the accuracy of the "initial" model showed slight improvement from 72.54% to 72.61% . 
+![](resources/accuracyChallenge.PNG) To me, it was interesting to see that shift as there is no difference between the two notebook codes.
+
 
 ## Summary
 *Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.*
