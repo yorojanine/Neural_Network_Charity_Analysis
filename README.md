@@ -32,24 +32,33 @@ The following variables have been considered as features for the model:<br>
 
 ### Deliverable 2: Compiling, Training, and Evaluating the Model
 *How many neurons, layers, and activation functions did you select for your neural network model, and why?*<br>
-
 In using the nine features listed above, the nueral network model has been set for two hidden layers.<br>
 At the first hidden layer, 80 neurons were the selected input based on the provided code using the relu activation function.<br>
 At the second hidden layer, also based on the provided code, 30 neurons were the selected input using the relu activation function. <br>
 The relu activation was used as it handles non-linear data and simplifies output better than other activation functions.<br>
-Finally at the output layer, 1 neuron was applied using the sigmoid activation function because sigmoid is set to produce a probability output.<br>
+Finally at the output layer, 1 neuron was applied using the sigmoid activation function to produce a probability output.<br>
 
 ![](resources/dev2_inputs.PNG)
 
 *Were you able to achieve the target model performance?*<br>
-The model's target performance was to achieve an accuracy of higher than 75%. After running the initial input, the model was shy of roughly 2% and only achieved 72.61% accuracy. 
+The model's target performance was to achieve an accuracy of higher than 75%. After running the initial input, the model was shy of roughly 2% and only achieved **72.61%** accuracy.
 
 ![](resources/originalAccuracy.PNG)
 
 ### Deliverable 3: Optimization
-*What steps did you take to try and increase model performance?*
+*What steps did you take to try and increase model performance?*<br>
+Since the original model missed its mark of achieving the desired 75% accuaracy target, three different approaches were taken in order to optimize the model.
 
-<show all 3 steps>
+1) **Adding an additional hidden layer and setting the hidden nodes to 20.** - At the chance the model may be underfitting, I felt adding an additional layer would be able to address that issue. Unfortunately, this attempt showed minimal improvements. In fact, it lowered the accuracy of the model to **72.40%**.<br>
+![](resources/attempt1.PNG)
+
+2) **Add more nuerons to the original two layers.** - Since adding the additional layer lowered the model's accuracy, I decided to remove the added hidden layer and continue with the original two layers. Because the number of nuerons can also be a factor in over/underfitting, I decided to increase the preset nuerons. By increasing the first hidden layer from 80 to 100 nuerons and the second hidden layer from 30 to 60, the goal was to again try and address any form of underfitting. Unfortunately, I came up still a little short from both the target goal and the original accuracy. While this model performed better than my first optimization attempt with **72.43%** accuracy, it still wasn't enough.
+![](resources/attempt2.PNG)
+
+3) **Changing the activation function of all hidden layers**. - Finally, with the last attempt at optimization, I decided to keep the number of nuerons from the second attempt since it did have some marked improvements. In addition, I wanted to see if changing the activation function would make any difference to the model performance. Hence, all the activation functions at all layers (first, second, and output) were changed from "relu" to "sigmoid". Based on the results, changing activation functions made no improvements to the accuracy score and stayed at **72.43%**.
+![](resources/attempt3.PNG)
+
+Furthermore, as we can see from the results, all attempts to optimize the model failed without any marked improvements to the original model.
 
 ### Challenges
 
