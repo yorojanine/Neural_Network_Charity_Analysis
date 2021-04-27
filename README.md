@@ -55,7 +55,7 @@ Since the original model missed its mark of achieving the desired 75% accuaracy 
 2) **Add more nuerons to the original two layers.** - Since adding the additional layer lowered the model's accuracy, I decided to remove the added hidden layer and continue with the original two layers. Because the number of nuerons can also be a factor in over/underfitting, I decided to increase the preset nuerons. By increasing the first hidden layer from 80 to 100 nuerons and the second hidden layer from 30 to 60, the goal was to again try and address any form of underfitting. Unfortunately, I came up still a little short from both the target goal and the original accuracy. While this model performed better than my first optimization attempt with **72.43%** accuracy, it still wasn't enough.
 ![](resources/attempt2.PNG)
 
-3) **Changing the activation function of all hidden layers**. - Finally, with the last attempt at optimization, I decided to keep the number of nuerons from the second attempt since it did have some marked improvements. In addition, I wanted to see if changing the activation function would make any difference to the model performance. Hence, all the activation functions at all layers (first, second, and output) were changed from "relu" to "sigmoid". Based on the results, changing activation functions made no improvements to the accuracy score and stayed at **72.43%**.
+3) **Changing the activation function of all hidden layers**. - Finally, with the last attempt at optimization, I decided to keep the number of nuerons from the second attempt since it did have some marked improvements. In addition, I wanted to see if changing the activation function would make any difference to the model performance. Hence, all the activation functions at all layers (first, second, and output) were changed from "relu" to "sigmoid". Based on the results, changing activation functions made no improvements to the accuracy score and stayed at **72.43%**.<br>
 ![](resources/attempt3.PNG)
 
 Furthermore, as we can see from the results, all attempts to optimize the model failed without any marked improvements to the original model.
@@ -63,7 +63,8 @@ Furthermore, as we can see from the results, all attempts to optimize the model 
 ### Challenges
 
 Working with the dataset, I ran into a few challenges. (1) Unable to achieve optimization. In addition, I noticed a slight difference when I copied the `AlphaetSoupCharity.ipynb` and built upon the code with `AlphaetSoupCharity_Optimization.ipynb`. With the optimization code, I added all my attempts for enhancement. However, when I ran the whole notebook through as one swoop, I noticed that the accuracy of the "initial" model showed slight improvement from 72.54% to 72.61% . 
-![](resources/accuracyChallenge.PNG) To me, it was interesting to see that shift as there is no difference between the two notebook codes.
+![](resources/accuracyChallenge.PNG)
+<br> To me, it was interesting to see that shift as there is no difference between the two notebook codes.
 
 
 ## Summary
