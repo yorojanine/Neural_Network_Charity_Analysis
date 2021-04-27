@@ -62,10 +62,12 @@ Furthermore, as we can see from the results, all attempts to optimize the model 
 
 ### Challenges
 
-Working with the dataset, I ran into a few challenges. (1) Unable to achieve optimization. In addition, I noticed a slight difference when I copied the `AlphaetSoupCharity.ipynb` and built upon the code with `AlphaetSoupCharity_Optimization.ipynb`. With the optimization code, I added all my attempts for enhancement. However, when I ran the whole notebook through as one swoop, I noticed that the accuracy of the "initial" model showed slight improvement from 72.54% to 72.61% . 
+*Working with the dataset, I ran into a few challenges.*<br> 
+(1) Unable to achieve optimization. In addition, I noticed a slight difference when I copied the `AlphaetSoupCharity.ipynb` and built upon the code with `AlphaetSoupCharity_Optimization.ipynb`. With the optimization code, I added all my attempts for enhancement. However, when I ran the whole notebook through as one swoop, I noticed that the accuracy of the "initial" model showed slight improvement from 72.54% to 72.61% . 
 ![](resources/accuracyChallenge.PNG)
 <br> To me, it was interesting to see that shift as there is no difference between the two notebook codes.
 
+(2) I was having issues trying to create a callback at every 5 epochs. I was able to get assistance on stackoverflow to assign variables; however, I kept getting errors related to `train_labels.size` (see code block 18 in the `AlphaetSoupCharity.ipynb` notebook). I searched through the internet in order to get the correct dependency, but was unable to find a solution. I ended trying to install MNIST, but that also didn't help. Instead, I went ahead and hardcoded the `save_freq` input to reflect the size (804) and multiplied it by the epoch frequency (5), which should be a rough save frequency of 4000.
 
 ## Summary
 *Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.*
