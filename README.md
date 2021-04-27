@@ -34,18 +34,17 @@ The following variables have been considered as features for the model:<br>
 *How many neurons, layers, and activation functions did you select for your neural network model, and why?*<br>
 
 In using the nine features listed above, the nueral network model has been set for two hidden layers.<br>
-At the first hidden layer, 80 neurons were the selected input using the relu activation function. **--why?**
-At the second hidden layer, 30 neurons were the selected input also using the relu activation function. **--why?**
->> handles non-linear data and simplifies output better than other activation functions???
+At the first hidden layer, 80 neurons were the selected input based on the provided code using the relu activation function.<br>
+At the second hidden layer, also based on the provided code, 30 neurons were the selected input using the relu activation function. <br>
+The relu activation was used as it handles non-linear data and simplifies output better than other activation functions.<br>
+Finally at the output layer, 1 neuron was applied using the sigmoid activation function because sigmoid is set to produce a probability output.<br>
 
-Finally at the output layer, 1 neuron was applied using the sigmoid activation function. --why?
->> produces a probability output.
->> 
-insert picture of code
+![](resources/dev2_inputs.PNG)
 
 *Were you able to achieve the target model performance?*<br>
-<no, show the accuracy>
+The model's target performance was to achieve an accuracy of higher than 75%. After running the initial input, the model was shy of roughly 2% and only achieved 72.61% accuracy. 
 
+![](resources/originalAccuracy.PNG)
 
 ### Deliverable 3: Optimization
 *What steps did you take to try and increase model performance?*
