@@ -32,12 +32,11 @@ The following variables have been considered as features for the model:<br>
 
 ### Deliverable 2: Compiling, Training, and Evaluating the Model
 *How many neurons, layers, and activation functions did you select for your neural network model, and why?*<br>
-
 In using the nine features listed above, the nueral network model has been set for two hidden layers.<br>
 At the first hidden layer, 80 neurons were the selected input based on the provided code using the relu activation function.<br>
 At the second hidden layer, also based on the provided code, 30 neurons were the selected input using the relu activation function. <br>
 The relu activation was used as it handles non-linear data and simplifies output better than other activation functions.<br>
-Finally at the output layer, 1 neuron was applied using the sigmoid activation function because sigmoid is set to produce a probability output.<br>
+Finally at the output layer, 1 neuron was applied using the sigmoid activation function to produce a probability output.<br>
 
 ![](resources/dev2_inputs.PNG)
 
