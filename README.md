@@ -1,7 +1,7 @@
 # Neural_Network_Charity_Analysis
 
 ## Purpose
-The purpose of this challenge was to apply what we've learned about machine learning and **nueral networks**. Based on the features within the dataset, a binary classifier will be created in order to predict *whether applicants will be successful if funded by Alphabet Soup*. The goal is to use the skills learned from the module to help the foundation predict where to make investments.
+The purpose of this challenge was to apply what we've learned about machine learning and **nueral networks**(deep learning). Based on the features within the dataset, a binary classifier will be created in order to predict *whether applicants will be successful if funded by Alphabet Soup*. The goal is to use the skills learned from the module to help the foundation predict where to make investments.
 
 ## Analysis/Results
 The provided dataset used in this analysis is a [CSV](https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-online/module_19/charity_data.csv) "containing more than 34,000 organizations that have received funding from Alphabet Soup over the years." 
@@ -70,4 +70,9 @@ Furthermore, as we can see from the results, all attempts to optimize the model 
 (2) I was having issues trying to create a callback at every 5 epochs. I was able to get assistance on stackoverflow to assign variables; however, I kept getting errors related to `train_labels.size` (see code block 18 in the `AlphaetSoupCharity.ipynb` notebook). I searched through the internet in order to get the correct dependency, but was unable to find a solution. I ended trying to install MNIST, but that also didn't help. Instead, I went ahead and hardcoded the `save_freq` input to reflect the size (804) and multiplied it by the epoch frequency (5), which should be a rough save frequency of 4000.
 
 ## Summary
-*Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.*
+*Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.*<br>
+While the target accuracy was never achieved, the original model was the closest to 75% accuracy. Another model to compare for accuracy and consider to solve this classification problem is using Random Forest. It can be argued why Random Forest is better than a Nueral Network or vice versa, but I think it's imperative to ask what is important to the customer. 
+
+With the Nueral Network, the features lose their descriptive values and "repurposed" for the sake of model performance. If the categorical variables weren't important to the customer, the Nueral Network approach would suffice. On the other hand, in this scenario, it seems that the company would need these categorical values as it helps them understand which charities are successful. Hence, with the Random Forest, I think it would help address that as it can provide the interpretation of a decision tree, only with better performance. In addition, the Random Forest might also be able to address any issues with overfitting (if it applies).  
+
+All in all, they are both different techniques that learn differently and it comes down to the final ask. Here, we want to know which charities funded by AlphabetSoup are successful and not necessarily how accurate is the model. With the Nueral Network, some of those details get lost early on; hence, I think the Random Forest might fare better with the customer in the long run. 
