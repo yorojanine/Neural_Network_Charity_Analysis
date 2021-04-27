@@ -63,7 +63,7 @@ Furthermore, as we can see from the results, all attempts to optimize the model 
 ### Challenges
 
 *Working with the dataset, I ran into a few challenges.*<br> 
-(1) Unable to achieve optimization. In addition, I noticed a slight difference when I copied the `AlphaetSoupCharity.ipynb` and built upon the code with `AlphaetSoupCharity_Optimization.ipynb`. With the optimization code, I added all my attempts for enhancement. However, when I ran the whole notebook through as one swoop, I noticed that the accuracy of the "initial" model showed slight improvement from 72.54% to 72.61% . 
+(1) Unable to achieve optimization. In addition, I noticed a slight difference when I copied the `AlphaetSoupCharity.ipynb` and built upon the code with `AlphaetSoupCharity_Optimization.ipynb`. With the optimization code, I added all my attempts for enhancement. However, when I ran the whole notebook through as one swoop, I noticed that the accuracy of the "initial" model showed slight improvement from 72.54% to 72.61%.<br>
 ![](resources/accuracyChallenge.PNG)
 <br> To me, it was interesting to see that shift as there is no difference between the two notebook codes.
 
